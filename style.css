@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+--StrongCyan: hsl(171, 66%, 44%);
+--LightBlue: hsl(233, 100%, 69%);
+--DarkGrayishBlue: hsl(210, 10%, 33%);
+--GrayishBlue: hsl(201, 11%, 66%);
+}
+body{
+    font-size: 18px;
+}
+.landing{
+    /* height: 100vh; */
+    background-image: url(images/bg-header-desktop.png);
+    background-size: cover;
+    background-position: 0%;
+    text-align: center;
+}
+.logo img{
+    margin-top: 80px;
+}
+.address{
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--DarkGrayishBlue) ;
+}
+.det{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+    color: var(--GrayishBlue);
+}
+.sec .det p{
+    width: 600px;
+    margin-top: 15px;
+}
+.sec .btn{
+    margin-top: 30px;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 0 1px 2px rgb(237, 232, 232);
+    cursor: pointer;
+}
+.sec .btn .one{
+    margin-right: 15px;
+    background-color: var(--StrongCyan);
+}
+.sec .btn .two{
+    background-color: var(--LightBlue);
+}
+/* pg2 */
+.pg2{
+    text-align: center;
+    margin-top: 250px;
+}
+.pg2 .det p{
+    line-height: 25px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(500px,1fr));
+    gap: 50px;
+    justify-content: center;
+    position: relative;
+}
+.pg2 .grid .image img{
+    position: relative;
+    left: -10%;
+}
+.pg2 .grid{
+    margin-top: 120px;
+}
+.pg2 .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    position: relative;
+}
+.pg2 .flex h3{
+    color: var(--DarkGrayishBlue);
+}
+.pg2 .flex p{
+    color: var(--GrayishBlue);
+}
+.pg2 .box{
+margin-bottom: 25px;
+}
+.image{
+    position: relative;
+}
+/* pg3 */
+.pg3{
+    margin-top: 250px;
+    text-align: center;
+}
+.pg3 .image{
+    margin-top: 100px;
+}
+/* pg4 */
+.pg4{
+    text-align: center;
+}
+.pg4 .cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 150px;
+}
+.pg4 .cont .box{
+    max-width: 400px;
+}
+/* pg5 */
+.pg5{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+/* pg6 */
+.pg6{
+    margin-top: 250px;
+    text-align: center;
+}
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(241, 241, 241);
+    margin-top: 250px;
+}
+footer .flex{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3,minmax(100px,1fr));
+}
+footer .social img{
+    margin: 15px;
+}
+
+/* *-*****//****** */
+@media screen and (max-width:1445px) {
+    .container{
+        width: 1160px;
+    }
+    .container .image img{
+        width: 500px;
+    }
+    .grid{
+        gap: 0;
+    }
+    .pg2 .box{
+        width: 500px;
+    }
+    .pg2 .grid .image img{
+        left: 0;
+    }
+
+}
+/* small */
+@media screen and (max-width:376px) {
+    .container{
+        width: 370px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .pg2 .grid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .pg2 .image{
+        margin-bottom: 50px;
+    }
+    .pg2 .flex{
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+    }
+    .pg2 .flex .box{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: auto;
+    }
+    .btn{
+        flex-direction: row;
+    }
+    img{
+        max-width: 250px;
+    }
+    .pg2 .grid .image img{
+        position: relative;
+        left: 0;
+    }
+    .grid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec p{
+        width: 350px;
+    }
+    .pg2 .flex p{
+        text-align: center;
+    }
+    .pg4 .cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 150px;
+    }
+
+
+.sec .address{
+    font-size: 12px;
+}
+.sec .datail{
+    font-size: 8px;
+    width: 320px;
+}
+.sec .det p{
+    font-size: 8px;
+    width: 320px;
+}
+.pg5 img{
+    width: 130px;
+}
+footer .col img{
+    width: 100px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    text-align: center;
+    }
+    footer .flex{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+}
+
+
+
+
+/* ****************** */
+
